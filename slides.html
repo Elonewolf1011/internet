@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sides in borders</title>
+    <style>
+        .container {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    padding: 0.5em;
+}
+.top {
+    border-top: 2px solid red;
+}
+.right {
+    border-right: 2px solid red;
+}
+.bottom {
+    border-bottom: 2px solid red;
+}
+.left {
+    border-left: 2px solid red;
+}
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="cell top centerFlex">top</div>
+        <div class="cell right centerFlex">right</div>
+        <div class="cell bottom centerFlex">bottom</div>
+        <div class="cell left centerFlex">left</div>
+    </section>
+</body>
+</html>
