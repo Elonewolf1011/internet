@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-practice</title> 
+    <style>
+        .container {
+            height: auto;
+            width: auto;
+            border: 3px solid blueviolet;
+            gap: 2em;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-areas: 
+                "one one two two  three"
+                "one one two two three"
+                "four five two two three"
+                "six five two two seven"
+                "six eight eight nine seven";
+        }
+
+        .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9 {
+            border: 1px solid black; /* Added border */
+            padding: 10px; /* Added padding for better visualization */
+        }
+
+        .item1 {
+            grid-area: one;
+        }
+        .item2 {
+            grid-area: two;
+        }
+        .item3 {
+            grid-area: three;
+        }
+        .item4 {
+            grid-area: four;
+        }
+        .item5 {
+            grid-area: five;
+        }
+        .item6 {
+            grid-area: six;
+        }
+        .item7 {
+            grid-area: seven;
+        }
+        .item8 {
+            grid-area: eight;
+        }
+        .item9 {
+            grid-area: nine;
+        }
+
+    </style>       
+</head>
+<body>
+    <div class="container">
+        <div class="item1">one</div>
+        <div class="item2">two</div>
+        <div class="item3">three</div>
+        <div class="item4">four</div>
+        <div class="item5">five</div>
+        <div class="item6">six</div>
+        <div class="item7">seven</div>
+        <div class="item8">eight</div>
+        <div class="item9">nine</div>
+    </div>
+</body>
+</html>
