@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container {
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+.centerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cell {
+    border: 2px solid;
+    padding: 0.5em;
+}
+.red {
+    color: red;
+}
+.rgb {
+    color: rgb(150, 0,0);
+}
+.rgba {
+    color: rgba(150, 50, 0, 0.5);
+}
+.blue{
+    color: blue;
+}
+    </style>
+</head>
+<body>
+    <section class="container">
+
+        <div class="cell red centerFlex">Red</div>
+        <div class="cell rgb centerFlex">RGB</div>
+        <div class="cell rgba centerFlex">RGBA</div>
+        <div class="cell blue centerFlex">Blue</div>
+    </section>
+</body>
+</html>
