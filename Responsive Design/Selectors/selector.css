@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+h1 { color: red; }
+h2.blue { color: blue; }
+.gray { color: gray; }
+#golden { color: goldenrod; }
+.container :nth-child(2n) { background: blue; }
+
+.threeodd :nth-child(2n +1 ){
+    background: purple;
+    margin: 1em;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
+    margin-left: 3em;
+}
+.threeodd :nth-child(2n){
+    background: lime;
+    margin: 1em;
+    color: 1em;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
+}
+.threeodd :nth-child(){
+    background: lightsalmon;
+    margin: 1em;
+    color: 1em;
+    color: white;
+    padding: 1em;
+    margin-top: 2em;
