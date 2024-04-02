@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.static{
+    height: 500px;
+    width: 500px;
+    border: 2px solid blueviolet;
+    position: static;
+    margin: 20px 20px;
+}
+.item1, .item2, .item3, .item4, .item5, .item6{
+    height: 50px;
+    width: 200px;
+    border: 1px solid red;
+    margin: 20px 20px;
+}
+
+.relative{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+.ite1, .ite2, .ite3, .ite4, .ite5, .ite6{
+    height: 50px;
+    width: 200px;
+    border: 1px solid blue;
+    margin: 20px 20px;
+}
+
+.abs{
+    height: 500px;
+    width: 500px;
+    border: 2px solid aqua;
+    margin: 50px;
+    position: absolute;
+}
+.it1, .it2, .it3, .it4, .it5, .it6{
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px 20px;
+}
+
+.cricle{
+    height: 300px;
+    width: 800px;
+    border: 2px solid red;
+    position: sticky;
+}
+.cric1, .cric2, .cric3{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+    left: 50px;
+}
